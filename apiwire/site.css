@@ -750,7 +750,7 @@ body.apiwire-home {
 }
 
 body.apiwire-home .page {
-  width: min(1120px, calc(100% - 56px));
+  width: min(1220px, calc(100% - 40px));
   margin: 28px auto 32px;
   overflow: hidden;
   border: 1px solid rgba(17, 24, 39, 0.08);
@@ -768,8 +768,8 @@ body.apiwire-home .hero,
 body.apiwire-home .benefits,
 body.apiwire-home .features,
 body.apiwire-home .platform {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 body.apiwire-home .nav {
@@ -780,9 +780,9 @@ body.apiwire-home .nav {
 
 body.apiwire-home .nav-logo {
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
@@ -795,7 +795,7 @@ body.apiwire-home .logo-mark {
 
 body.apiwire-home .nav-links a {
   color: rgba(230, 237, 243, 0.66);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body.apiwire-home .nav-links a:hover {

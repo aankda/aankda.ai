@@ -25,8 +25,8 @@
   --accent-soft: rgba(122, 198, 236, 0.14);
   --focus: #9ed8ff;
   --hero-glow: radial-gradient(circle at top, rgba(92, 173, 218, 0.18), transparent 46%);
-  --page-width: 1120px;
-  --header-width: 920px;
+  --page-width: 1200px;
+  --header-width: 1200px;
   --brand-accent: color-mix(in srgb, var(--accent) 78%, white 22%);
 }
 
@@ -148,12 +148,12 @@ code {
 
 .header-inner {
   padding: 0.55rem 0;
-  width: min(var(--header-width), calc(100% - 2rem));
-  min-height: 56px;
+  width: min(var(--header-width), calc(100% - 1.5rem));
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 .brand {
@@ -179,7 +179,7 @@ code {
 }
 
 .brand-name {
-  font-size: 0.96rem;
+  font-size: 1.04rem;
   font-weight: 650;
   letter-spacing: -0.02em;
 }
@@ -194,7 +194,7 @@ code {
 .footer-links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .header-actions {
@@ -222,7 +222,7 @@ code {
 .nav-link {
   display: inline-flex;
   align-items: center;
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   font-weight: 500;
   padding: 0;
   border: 0;

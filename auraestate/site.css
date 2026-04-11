@@ -20,7 +20,7 @@
   --radius-lg: 22px;
   --radius-xl: 28px;
   --radius-pill: 999px;
-  --header-width: 920px;
+  --header-width: 1200px;
 }
 
 :root[data-theme="light"] {
@@ -180,25 +180,20 @@ code {
   stroke: none;
 }
 
-.brand-copy strong {
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
 .header-actions,
 .header-nav,
 .footer-links,
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.1rem;
   flex-wrap: wrap;
 }
 
 .nav-link,
 .footer-links a {
   color: var(--text-soft);
+  font-size: 0.98rem;
   text-decoration: none;
   transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
 }

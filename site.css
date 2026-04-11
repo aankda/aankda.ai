@@ -8,7 +8,7 @@ html {
   --sans: "Geist", system-ui, sans-serif;
   --serif: "Instrument Serif", Georgia, serif;
   --frame-max: 1240px;
-  --content-max: 1120px;
+  --content-max: 1240px;
   --shell-pad: clamp(1.25rem, 3vw, 1.75rem);
   --bg: #f8f7f4;
   --bg-card: #ffffff;
@@ -795,8 +795,8 @@ body.catalog-page .site-header {
 }
 
 body.catalog-page .site-header .header-inner {
-  width: min(1080px, calc(100% - 2rem));
-  min-height: 3.5rem;
+  width: min(var(--content-max), calc(100% - 1.5rem));
+  min-height: 3.75rem;
 }
 
 body.catalog-page .site-header .aankda-brand__mark {
@@ -806,14 +806,14 @@ body.catalog-page .site-header .aankda-brand__mark {
 body.catalog-page .site-header .aankda-brand__name {
   color: #ffffff;
   font-family: var(--serif);
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 400;
   letter-spacing: 0.015em;
 }
 
 body.catalog-page .header-actions,
 body.catalog-page .header-nav {
-  gap: 1.15rem;
+  gap: 1.2rem;
 }
 
 body.catalog-page .nav-link {
@@ -821,7 +821,7 @@ body.catalog-page .nav-link {
   padding: 0;
   border-radius: 0;
   background: transparent;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 500;
 }
 
@@ -1076,13 +1076,14 @@ body.catalog-page .site-footer--catalog .footer-links a:hover {
 }
 
 body.portal-page .aankda-brand__name {
+  font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   color: #f3f7fb;
 }
 
 body.portal-page .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   font-weight: 500;
   color: var(--tx2);
   padding: 7px 10px;
@@ -1103,7 +1104,7 @@ body.portal-page .site-header {
 }
 
 body.portal-page .site-header .header-inner {
-  min-height: 58px;
+  min-height: 62px;
 }
 
 body.portal-page .site-header,
@@ -1559,14 +1560,14 @@ body.about-page .site-header {
 body.landing-page .site-header .header-inner,
 body.catalog-page .site-header .header-inner,
 body.about-page .site-header .header-inner {
-  width: min(var(--content-max), calc(100% - 2rem));
-  min-height: 4.75rem;
+  width: min(var(--content-max), calc(100% - 1.5rem));
+  min-height: 5rem;
 }
 
 body.landing-page .aankda-brand__name,
 body.catalog-page .aankda-brand__name,
 body.about-page .aankda-brand__name {
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   color: var(--tx1);
@@ -1575,13 +1576,13 @@ body.about-page .aankda-brand__name {
 body.landing-page .header-actions,
 body.catalog-page .header-actions,
 body.about-page .header-actions {
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 body.landing-page .header-nav,
 body.catalog-page .header-nav,
 body.about-page .header-nav {
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 body.landing-page .nav-link,
@@ -1591,7 +1592,7 @@ body.about-page .nav-link {
   border-radius: 0;
   background: transparent;
   color: var(--tx2);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   font-weight: 500;
 }
 
@@ -2395,7 +2396,7 @@ body.catalog-page .site-header {
 body.catalog-page .site-header .header-inner,
 body.catalog-page .catalog-main,
 body.catalog-page .site-footer--catalog .footer-row {
-  width: min(1080px, calc(100% - 2rem));
+  width: min(var(--content-max), calc(100% - 1.5rem));
 }
 
 body.catalog-page .site-header .aankda-brand__mark {
@@ -2405,20 +2406,21 @@ body.catalog-page .site-header .aankda-brand__mark {
 body.catalog-page .site-header .aankda-brand__name {
   color: #ffffff;
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
 body.catalog-page .header-actions,
 body.catalog-page .header-nav {
-  gap: 1.15rem;
+  gap: 1.2rem;
 }
 
 body.catalog-page .nav-link {
   color: rgba(230, 237, 243, 0.72);
   padding: 0;
   background: transparent;
+  font-size: 0.98rem;
 }
 
 body.catalog-page .nav-link:hover {
