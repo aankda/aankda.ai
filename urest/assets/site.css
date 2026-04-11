@@ -25,8 +25,8 @@
   --accent-soft: rgba(122, 198, 236, 0.14);
   --focus: #9ed8ff;
   --hero-glow: radial-gradient(circle at top, rgba(92, 173, 218, 0.18), transparent 46%);
-  --page-width: 1280px;
-  --header-width: 1280px;
+  --page-width: 1400px;
+  --header-width: 1400px;
   --brand-accent: color-mix(in srgb, var(--accent) 78%, white 22%);
 }
 

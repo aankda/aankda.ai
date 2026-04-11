@@ -7,8 +7,8 @@ html {
 :root {
   --sans: "Geist", system-ui, sans-serif;
   --serif: "Instrument Serif", Georgia, serif;
-  --frame-max: 1280px;
-  --content-max: 1280px;
+  --frame-max: 1400px;
+  --content-max: 1400px;
   --shell-pad: clamp(1.25rem, 3vw, 1.75rem);
   --bg: #f8f7f4;
   --bg-card: #ffffff;
@@ -2404,15 +2404,19 @@ body.catalog-page .site-footer--catalog .footer-row {
 }
 
 body.catalog-page .site-header .aankda-brand__mark {
-  display: none;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 5px 12px rgba(224, 122, 58, 0.2));
 }
 
 body.catalog-page .site-header .aankda-brand__name {
-  color: #ffffff;
-  font-family: var(--sans);
-  font-size: 1.08rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  display: none;
+}
+
+body.catalog-page .aankda-brand {
+  gap: 0;
 }
 
 body.catalog-page .header-actions,
