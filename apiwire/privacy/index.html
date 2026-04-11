@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Wire Privacy | Local by default</title>
+  <meta
+    name="description"
+    content="Privacy guidance for API Wire, including local-default data handling, optional Cloud Sync behavior, and contact routes."
+  />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0d1117" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://aankda.ai/apiwire/privacy/" />
+  <link rel="icon" href="../assets/apiwire-app-icon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/public-core.css?v=20260410-apiwire" />
+  <link rel="stylesheet" href="../site.css?v=20260410-apiwire" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main class="page" id="main">
+    <header class="nav">
+      <a class="nav-logo" href="/apiwire/" aria-label="API Wire home">
+        <span class="logo-mark" aria-hidden="true">
+          <img src="../assets/apiwire-app-icon.svg" alt="" width="14" height="14" />
+        </span>
+        <span>API Wire</span>
+      </a>
+
+      <nav class="nav-links" aria-label="API Wire pages">
+        <a href="/apiwire/">Overview</a>
+        <a href="/apiwire/support/">Support</a>
+      </nav>
+    </header>
+
+    <section class="policy-hero">
+      <p class="section-label">Privacy</p>
+      <h1>Local by default. Sync only when you choose it.</h1>
+      <p>
+        API Wire is designed as a desktop app with local data handling by default. Core local usage does not require a cloud account, and this repository does not publish a default AANKDA-operated sync endpoint.
+      </p>
+      <div class="effective">Effective date: March 8, 2026</div>
+    </section>
+
+    <section class="policy-grid" aria-label="API Wire privacy sections">
+      <article class="priv-card highlight">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <rect x="1" y="1" width="8" height="8" rx="1"></rect>
+            </svg>
+          </span>
+          What stays on your device
+        </h3>
+        <p>By default, API Wire processes and stores its working data on your device, including request collections and history, local environment values and settings, and local diagnostics and log data.</p>
+      </article>
+
+      <article class="priv-card">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <line x1="2" y1="8" x2="8" y2="2"></line>
+              <line x1="2" y1="2" x2="8" y2="8"></line>
+            </svg>
+          </span>
+          What is not sent by default
+        </h3>
+        <p>When you use API Wire in local-only mode, it does not send your collections, workspace environment metadata, or local settings snapshots to a remote service by default.</p>
+      </article>
+
+      <article class="priv-card">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <path d="M1 5h8"></path>
+              <path d="M5 1v8"></path>
+            </svg>
+          </span>
+          Cloud Sync is optional
+        </h3>
+        <p>If you configure a sync endpoint and choose to use Cloud Sync, API Wire can transmit collection data included in a workspace snapshot, workspace environment metadata, and selected local settings snapshots.</p>
+      </article>
+
+      <article class="priv-card">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <rect x="2" y="4" width="6" height="5" rx="1"></rect>
+              <path d="M3 4V3a2 2 0 0 1 4 0v1"></path>
+            </svg>
+          </span>
+          Secrets and secure values
+        </h3>
+        <p>Secrets are intended to be stored through local secret-handling paths such as OS keyring integrations. Secure values are not exported from workspace metadata as plaintext.</p>
+      </article>
+
+      <article class="priv-card">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <circle cx="5" cy="5" r="4"></circle>
+            </svg>
+          </span>
+          No default AANKDA backend
+        </h3>
+        <p>This repository does not publish a default AANKDA-operated sync endpoint. If you point Cloud Sync to an endpoint run by your organization or a third party, that operator's privacy terms apply separately.</p>
+      </article>
+
+      <article class="priv-card highlight">
+        <h3>
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 10 10">
+              <path d="M5 1l1.5 3h3l-2.5 2 1 3L5 7.5 3 9l1-3L1.5 4h3z"></path>
+            </svg>
+          </span>
+          Your control
+        </h3>
+        <p>You control the local data files stored by API Wire and can remove them from your device at any time. Privacy questions can be sent to <a class="contact-link" href="mailto:privacy@aankda.ai">privacy@aankda.ai</a>.</p>
+      </article>
+    </section>
+
+    <section class="control" aria-label="Privacy change note">
+      <div class="control-icon" aria-hidden="true">
+        <svg viewBox="0 0 18 18">
+          <path d="M9 2l1.8 5.5H17l-4.9 3.5 1.9 5.5L9 13l-5 3.5 1.9-5.5L1 7.5h6.2z"></path>
+        </svg>
+      </div>
+      <div class="control-text">
+        <h3>Privacy behavior changes? This page changes with it.</h3>
+        <p>If privacy behavior changes materially, this page is updated to reflect it. Questions go to <a class="contact-link" href="mailto:privacy@aankda.ai">privacy@aankda.ai</a>.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-copy">© 2026 AANKDA LLC</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/apiwire/">Overview</a>
+        <a href="/apiwire/support/">Support</a>
+        <a href="mailto:privacy@aankda.ai">Privacy contact</a>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
