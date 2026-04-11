@@ -790,11 +790,18 @@ body.apiwire-home .nav::after {
 }
 
 body.apiwire-home .nav-logo {
+  gap: 0;
   color: #fff;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+body.apiwire-home .nav-logo__mark {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 body.apiwire-home .logo-mark {
