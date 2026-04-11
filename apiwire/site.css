@@ -154,19 +154,6 @@ code {
   color: var(--text);
 }
 
-.nav-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 28px;
-  padding: 6px 14px;
-  border-radius: 6px;
-  background: var(--teal);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 500;
-}
-
 .hero,
 .platform,
 .features,

@@ -2404,7 +2404,7 @@ body.catalog-page .site-footer--catalog .footer-row {
 }
 
 body.catalog-page .site-header .aankda-brand__mark {
-  display: block;
+  display: block !important;
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
@@ -2412,7 +2412,7 @@ body.catalog-page .site-header .aankda-brand__mark {
 }
 
 body.catalog-page .site-header .aankda-brand__name {
-  display: none;
+  display: none !important;
 }
 
 body.catalog-page .aankda-brand {
