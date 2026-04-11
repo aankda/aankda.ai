@@ -25,8 +25,8 @@
   --accent-soft: rgba(122, 198, 236, 0.14);
   --focus: #9ed8ff;
   --hero-glow: radial-gradient(circle at top, rgba(92, 173, 218, 0.18), transparent 46%);
-  --page-width: 1200px;
-  --header-width: 1200px;
+  --page-width: 1280px;
+  --header-width: 1280px;
   --brand-accent: color-mix(in srgb, var(--accent) 78%, white 22%);
 }
 
@@ -142,13 +142,13 @@ code {
 .header-inner,
 .page-main,
 .site-footer {
-  width: min(var(--page-width), calc(100% - 2rem));
+  width: min(var(--page-width), calc(100% - 1rem));
   margin: 0 auto;
 }
 
 .header-inner {
   padding: 0.55rem 0;
-  width: min(var(--header-width), calc(100% - 1.5rem));
+  width: min(var(--header-width), calc(100% - 1rem));
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -860,7 +860,7 @@ code {
   .header-inner,
   .page-main,
   .site-footer {
-    width: min(var(--page-width), calc(100% - 1.2rem));
+    width: min(var(--page-width), calc(100% - 1rem));
   }
 
   .header-inner {

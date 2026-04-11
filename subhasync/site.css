@@ -26,8 +26,8 @@
   --radius-md: 24px;
   --radius-lg: 34px;
   --radius-pill: 999px;
-  --page-width: 1200px;
-  --header-width: 1200px;
+  --page-width: 1280px;
+  --header-width: 1280px;
   --brand-accent: color-mix(in srgb, var(--accent-strong) 80%, white 20%);
 }
 
@@ -156,12 +156,12 @@ code {
 .header-inner,
 .page-main,
 .site-footer {
-  width: min(var(--page-width), calc(100% - 1.5rem));
+  width: min(var(--page-width), calc(100% - 1rem));
   margin: 0 auto;
 }
 
 .header-inner {
-  width: min(var(--header-width), calc(100% - 1.5rem));
+  width: min(var(--header-width), calc(100% - 1rem));
 }
 
 .page-main {

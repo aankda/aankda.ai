@@ -7,8 +7,8 @@ html {
 :root {
   --sans: "Geist", system-ui, sans-serif;
   --serif: "Instrument Serif", Georgia, serif;
-  --frame-max: 1240px;
-  --content-max: 1240px;
+  --frame-max: 1280px;
+  --content-max: 1280px;
   --shell-pad: clamp(1.25rem, 3vw, 1.75rem);
   --bg: #f8f7f4;
   --bg-card: #ffffff;
@@ -1096,15 +1096,17 @@ body.portal-page .nav-link:hover {
 }
 
 body.portal-page .site-header {
-  background: color-mix(in srgb, #0d1117 72%, transparent);
+  width: 100%;
+  background: linear-gradient(180deg, rgba(9, 13, 18, 0.26) 0%, rgba(9, 13, 18, 0.04) 100%);
   backdrop-filter: blur(20px) saturate(138%);
   -webkit-backdrop-filter: blur(20px) saturate(138%);
   box-shadow: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--bd) 92%, transparent);
+  border-bottom: 0;
 }
 
 body.portal-page .site-header .header-inner {
-  min-height: 62px;
+  width: min(var(--content-max), calc(100% - 1rem));
+  min-height: 60px;
 }
 
 body.portal-page .site-header,
@@ -1560,7 +1562,7 @@ body.about-page .site-header {
 body.landing-page .site-header .header-inner,
 body.catalog-page .site-header .header-inner,
 body.about-page .site-header .header-inner {
-  width: min(var(--content-max), calc(100% - 1.5rem));
+  width: min(var(--content-max), calc(100% - 1rem));
   min-height: 5rem;
 }
 
@@ -1607,9 +1609,10 @@ body.portal-page .site-header {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: linear-gradient(180deg, rgba(9, 13, 18, 0.68) 0%, rgba(9, 13, 18, 0.42) 100%);
-  backdrop-filter: blur(20px) saturate(138%);
-  -webkit-backdrop-filter: blur(20px) saturate(138%);
+  width: 100%;
+  background: linear-gradient(180deg, rgba(9, 13, 18, 0.46) 0%, rgba(9, 13, 18, 0.14) 100%);
+  backdrop-filter: blur(18px) saturate(132%);
+  -webkit-backdrop-filter: blur(18px) saturate(132%);
   border-bottom: 0;
   box-shadow: none;
 }
@@ -1629,16 +1632,17 @@ body.catalog-page .site-header {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: linear-gradient(180deg, rgba(9, 13, 18, 0.78) 0%, rgba(9, 13, 18, 0.5) 100%);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  width: 100%;
+  background: linear-gradient(180deg, rgba(9, 13, 18, 0.28) 0%, rgba(9, 13, 18, 0.05) 100%);
+  backdrop-filter: blur(18px) saturate(132%);
+  -webkit-backdrop-filter: blur(18px) saturate(132%);
   border-bottom: 0;
   box-shadow: none;
 }
 
 body.portal-page .site-header .header-inner {
-  width: min(var(--content-max), calc(100% - 2rem));
-  min-height: 4.75rem;
+  width: min(var(--content-max), calc(100% - 1rem));
+  min-height: 4.5rem;
 }
 
 body.portal-page .site-footer {
@@ -2396,7 +2400,7 @@ body.catalog-page .site-header {
 body.catalog-page .site-header .header-inner,
 body.catalog-page .catalog-main,
 body.catalog-page .site-footer--catalog .footer-row {
-  width: min(var(--content-max), calc(100% - 1.5rem));
+  width: min(var(--content-max), calc(100% - 1rem));
 }
 
 body.catalog-page .site-header .aankda-brand__mark {
