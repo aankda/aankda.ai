@@ -20,7 +20,7 @@
   --radius-lg: 22px;
   --radius-xl: 28px;
   --radius-pill: 999px;
-  --header-width: 1400px;
+  --header-width: 1920px;
 }
 
 :root[data-theme="light"] {
@@ -868,7 +868,7 @@ button:focus-visible,
 @media (max-width: 640px) {
   .page-shell,
   .page-shell-narrow {
-    width: min(1400px, calc(100% - 1rem));
+    width: min(1920px, calc(100% - 1rem));
     padding-top: 0.5rem;
   }
 

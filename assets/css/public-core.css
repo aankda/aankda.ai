@@ -84,7 +84,7 @@ a {
 }
 
 .page-shell {
-  width: min(1400px, calc(100% - 1rem));
+  width: min(1920px, calc(100% - 1rem));
   margin: 0 auto;
 }
 
@@ -113,7 +113,7 @@ a {
 }
 
 .header-inner {
-  width: min(var(--header-width, 1400px), calc(100% - 1rem));
+  width: min(1920px, calc(100% - 1rem));
   min-height: 60px;
   margin: 0 auto;
   justify-content: space-between;

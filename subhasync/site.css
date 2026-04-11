@@ -26,8 +26,8 @@
   --radius-md: 24px;
   --radius-lg: 34px;
   --radius-pill: 999px;
-  --page-width: 1400px;
-  --header-width: 1400px;
+  --page-width: 1920px;
+  --header-width: 1920px;
   --brand-accent: color-mix(in srgb, var(--accent-strong) 80%, white 20%);
 }
 
