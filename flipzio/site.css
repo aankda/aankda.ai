@@ -519,6 +519,10 @@ code {
   padding-bottom: 32px;
 }
 
+.policy-card--full {
+  grid-column: 1 / -1;
+}
+
 .policy-card__icon,
 .channel-icon {
   width: 22px;
@@ -672,11 +676,8 @@ code {
 
 @media (max-width: 1120px) {
   .hero-grid,
-  .screen-grid,
-  .summary-grid,
   .card-grid,
   .fact-grid,
-  .channels,
   .policy-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
