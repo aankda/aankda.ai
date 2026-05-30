@@ -841,3 +841,55 @@ body {
 .diagnostic-terminal div + div {
   margin-top: 8px;
 }
+
+/* Platform Toggle styling */
+.platform-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  position: absolute;
+  top: -64px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.platform-toggle {
+  display: inline-flex;
+  background: rgba(8, 16, 28, 0.9);
+  border: 0.5px solid var(--line-strong);
+  padding: 4px;
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toggle-btn:hover {
+  color: var(--text);
+}
+
+.toggle-btn.active {
+  background: var(--cyan);
+  color: #050a12;
+  box-shadow: 0 4px 12px rgba(34, 211, 238, 0.25);
+}
+
+@media (max-width: 768px) {
+  .platform-toggle-container {
+    position: relative;
+    top: 0;
+    margin-bottom: 32px;
+  }
+}

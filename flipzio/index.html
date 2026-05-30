@@ -97,11 +97,17 @@
 
           <div class="hero-visual" aria-label="Real Flipzio screenshots">
             <div class="hero-shot-stack">
+              <div class="platform-toggle-container">
+                <div class="platform-toggle" aria-label="Choose platform screenshots">
+                  <button class="toggle-btn active" data-platform="ios">iOS (iPhone XS Max)</button>
+                  <button class="toggle-btn" data-platform="android">Android (Pixel 8)</button>
+                </div>
+              </div>
               <figure class="hero-shot hero-shot--primary">
-                <img src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio home screen showing item input and generate draft action" />
+                <img data-shot="home-input" src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio home screen showing item input and generate draft action" />
               </figure>
               <figure class="hero-shot hero-shot--secondary">
-                <img src="./assets/flipzio-review-share-ios-new.png" alt="Flipzio review and share screen with generated marketplace draft copy" />
+                <img data-shot="review-share" src="./assets/flipzio-review-share-ios-new.png" alt="Flipzio review and share screen with generated marketplace draft copy" />
               </figure>
             </div>
           </div>
@@ -125,7 +131,7 @@
               <p>Choose US or SEA region. Toggle core and optional local platforms, then enter an item description and an optional photo.</p>
             </div>
             <figure class="screen-frame">
-              <img src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio home screen showing region selection and platform toggles" />
+              <img data-shot="home-input" src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio home screen showing region selection and platform toggles" />
             </figure>
           </article>
 
@@ -136,7 +142,7 @@
               <p>Inspect structured, platform-tailored output cards (with dedicated headline generation and price ranges) ready for quick copy or share actions.</p>
             </div>
             <figure class="screen-frame">
-              <img src="./assets/flipzio-review-share-ios-new.png" alt="Flipzio review screen with generated headline and base listing cards" />
+              <img data-shot="review-share" src="./assets/flipzio-review-share-ios-new.png" alt="Flipzio review screen with generated headline and base listing cards" />
             </figure>
           </article>
 
@@ -147,7 +153,7 @@
               <p>Browse previously generated draft summaries stored locally on your device for fast access, reuse, or deletion.</p>
             </div>
             <figure class="screen-frame">
-              <img src="./assets/flipzio-saved-drafts-ios-new.png" alt="Flipzio saved history screen with list of past generations" />
+              <img data-shot="saved-drafts" src="./assets/flipzio-saved-drafts-ios-new.png" alt="Flipzio saved history screen with list of past generations" />
             </figure>
           </article>
         </div>
@@ -170,7 +176,7 @@
               <p>Generates drafts for Facebook Marketplace, OfferUp, eBay, and Mercari, with optional add-ons for Craigslist and Nextdoor.</p>
             </div>
             <figure class="screen-frame">
-              <img src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio US compose screen" />
+              <img data-shot="home-input" src="./assets/flipzio-home-input-ios-new.png" alt="Flipzio US compose screen" />
             </figure>
           </article>
 
@@ -181,7 +187,7 @@
               <p>Streamlined interface focusing on South East Asia markets with direct support for Carousell draft generation.</p>
             </div>
             <figure class="screen-frame">
-              <img src="./assets/flipzio-home-input-ios-sea.png" alt="Flipzio SEA compose screen with Carousell" />
+              <img data-shot="home-input-sea" src="./assets/flipzio-home-input-ios-sea.png" alt="Flipzio SEA compose screen with Carousell" />
             </figure>
           </article>
         </div>
@@ -235,5 +241,31 @@
       </div>
     </footer>
   </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtns = document.querySelectorAll('.toggle-btn');
+      toggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const platform = btn.getAttribute('data-platform');
+          toggleBtns.forEach(b => {
+            if (b.getAttribute('data-platform') === platform) {
+              b.classList.add('active');
+            } else {
+              b.classList.remove('active');
+            }
+          });
+          
+          document.querySelectorAll('[data-shot]').forEach(img => {
+            const shot = img.getAttribute('data-shot');
+            if (platform === 'ios') {
+              img.src = `./assets/flipzio-${shot}-ios-new.png`;
+            } else {
+              img.src = `./assets/flipzio-${shot}-android-new.png`;
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
