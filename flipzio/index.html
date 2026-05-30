@@ -49,8 +49,8 @@
   </script>
   <link rel="preload" href="/assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/GeistMono-Variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./assets/flipzio-home-input-ios-new.png?v=chair" as="image" />
-  <link rel="preload" href="./assets/flipzio-review-share-ios-new.png?v=chair" as="image" />
+  <link rel="preload" href="./assets/flipzio-home-input-android-new.png?v=20260529-flipzio-android1" as="image" />
+  <link rel="preload" href="./assets/flipzio-review-share-android-new.png?v=20260529-flipzio-android1" as="image" />
   <link rel="stylesheet" href="/assets/css/public-core.css?v=20260410-shellwide4" />
   <link rel="stylesheet" href="./site.css?v=20260530-toggle" />
 </head>
@@ -99,15 +99,15 @@
             <div class="hero-shot-stack">
               <div class="platform-toggle-container">
                 <div class="platform-toggle" aria-label="Choose platform screenshots">
-                  <button class="toggle-btn active" data-platform="ios">iOS (iPhone XS Max)</button>
-                  <button class="toggle-btn" data-platform="android">Android (Pixel 8)</button>
+                  <button class="toggle-btn active" data-platform="android">Android (Pixel 8)</button>
+                  <button class="toggle-btn" data-platform="ios">iOS (iPhone XS Max)</button>
                 </div>
               </div>
               <figure class="hero-shot hero-shot--primary">
-                <img data-shot="home-input" src="./assets/flipzio-home-input-ios-new.png?v=chair" alt="Flipzio home screen showing item input and generate draft action" />
+                <img data-shot="home-input" src="./assets/flipzio-home-input-android-new.png?v=20260529-flipzio-android1" alt="Flipzio home screen showing item input and generate draft action" />
               </figure>
               <figure class="hero-shot hero-shot--secondary">
-                <img data-shot="review-share" src="./assets/flipzio-review-share-ios-new.png?v=chair" alt="Flipzio review and share screen with generated marketplace draft copy" />
+                <img data-shot="review-share" src="./assets/flipzio-review-share-android-new.png?v=20260529-flipzio-android1" alt="Flipzio review and share screen with generated marketplace draft copy" />
               </figure>
             </div>
           </div>
@@ -131,7 +131,7 @@
               <p>Choose US or SEA region. Toggle core and optional local platforms, then enter an item description and an optional photo.</p>
             </div>
             <figure class="screen-frame">
-              <img data-shot="home-input" src="./assets/flipzio-home-input-ios-new.png?v=chair" alt="Flipzio home screen showing region selection and platform toggles" />
+              <img data-shot="home-input" src="./assets/flipzio-home-input-android-new.png?v=20260529-flipzio-android1" alt="Flipzio home screen showing region selection and platform toggles" />
             </figure>
           </article>
 
@@ -142,7 +142,7 @@
               <p>Inspect structured, platform-tailored output cards (with dedicated headline generation and price ranges) ready for quick copy or share actions.</p>
             </div>
             <figure class="screen-frame">
-              <img data-shot="review-share" src="./assets/flipzio-review-share-ios-new.png?v=chair" alt="Flipzio review screen with generated headline and base listing cards" />
+              <img data-shot="review-share" src="./assets/flipzio-review-share-android-new.png?v=20260529-flipzio-android1" alt="Flipzio review screen with generated headline and base listing cards" />
             </figure>
           </article>
 
@@ -153,13 +153,40 @@
               <p>Browse previously generated draft summaries stored locally on your device for fast access, reuse, or deletion.</p>
             </div>
             <figure class="screen-frame">
-              <img data-shot="saved-drafts" src="./assets/flipzio-saved-drafts-ios-new.png?v=chair" alt="Flipzio saved history screen with list of past generations" />
+              <img data-shot="saved-drafts" src="./assets/flipzio-saved-drafts-android-new.png?v=20260529-flipzio-android1" alt="Flipzio saved history screen with list of past generations" />
             </figure>
           </article>
         </div>
       </div>
     </section>
 
+    <section class="section" aria-labelledby="regions-title">
+      <div class="container">
+        <p class="section-label">International Markets</p>
+        <h2 id="regions-title">Region-aware selection for global platforms.</h2>
+        <p class="section-intro">
+          Flipzio targets the platforms that matter to you. Switch between the US core set and South East Asia.
+        </p>
+
+        <div class="fact-grid" style="margin-top: 28px;">
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="policy-card__eyebrow">US Region</p>
+              <h3>US Core &amp; Local Platforms</h3>
+              <p>Generates drafts for Facebook Marketplace, OfferUp, eBay, and Mercari, with optional add-ons for Craigslist and Nextdoor.</p>
+            </div>
+          </article>
+
+          <article class="screen-card">
+            <div class="screen-copy">
+              <p class="policy-card__eyebrow">SEA Region</p>
+              <h3>SEA Platform Support</h3>
+              <p>Streamlined interface focusing on South East Asia markets with direct support for Carousell draft generation.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section" aria-labelledby="capabilities-title">
       <div class="container">
@@ -225,9 +252,9 @@
           document.querySelectorAll('[data-shot]').forEach(img => {
             const shot = img.getAttribute('data-shot');
             if (platform === 'ios') {
-              img.src = `./assets/flipzio-${shot}-ios-new.png?v=chair`;
+              img.src = `./assets/flipzio-${shot}-ios-new.png?v=20260529-flipzio-ios1`;
             } else {
-              img.src = `./assets/flipzio-${shot}-android-new.png?v=chair`;
+              img.src = `./assets/flipzio-${shot}-android-new.png?v=20260529-flipzio-android1`;
             }
           });
         });
