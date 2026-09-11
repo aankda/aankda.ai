@@ -1703,12 +1703,16 @@ body.catalog-page .section-label {
 }
 
 .landing-kicker {
-  margin: 1.25rem 0 0;
-  color: var(--tx2);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  margin: 1.5rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+  background: linear-gradient(135deg, var(--ac) 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 
 .landing-title {
